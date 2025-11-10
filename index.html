@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🏀 Basketball Throw</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fef9f4;
+      text-align: center;
+      user-select: none;
+    }
+    canvas {
+      background: linear-gradient(to top, #dcedc8 60%, #a5d6a7 100%);
+      border: 2px solid #444;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .controls {
+      margin-top: 10px;
+    }
+    label {
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #f57c00;
+    }
+  </style>
+</head>
+<body>
+  <h2>🏀 Баскетбол игра</h2>
+  <div class="controls">
+    <label>Угол: 
+      <input type="range" id="angle" min="20" max="80" value="45">
+      <span id="angleVal">45°</span>
+    </label>
+    
+    <br><br>
+    <button onclick="shoot()">Shoot!</button>
+  </div>
+  <canvas id="court" width="800" height="400"></canvas>
+
+  <script src="./script.js"></script>
+    
+    
+    
+    
+    
+</body>
+</html>
